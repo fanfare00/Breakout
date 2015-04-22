@@ -1,0 +1,12 @@
+C:\Users\BT21112\Desktop\Breakout - Game\Breakout - Game\obj\Debug\Breakout-Game.csproj.GenerateResource.Cache
+C:\Users\BT21112\Desktop\Breakout - Game\Breakout - Game\obj\Debug\Breakout - Game.exe
+C:\Users\BT21112\Desktop\Breakout - Game\Breakout - Game\bin\Debug\Breakout - Game.exe.config
+C:\Users\BT21112\Desktop\Breakout - Game\Breakout - Game\bin\Debug\Breakout - Game.exe
+C:\Users\BT21112\Desktop\Breakout - Game\Breakout - Game\bin\Debug\Breakout - Game.pdb
+C:\Users\BT21112\Desktop\Breakout - Game\Breakout - Game\obj\Debug\Breakout - Game.pdb
+C:\Users\BT21112\Desktop\Breakout - Game\Breakout - Game\obj\Debug\Breakout_Game.Form1.resources
+C:\Users\BT21112\Desktop\Breakout - Game\Breakout - Game\obj\Debug\Breakout_Game.Properties.Resources.resources
+C:\Users\BT21112\Desktop\Breakout - Game\Breakout - Game\obj\Debug\Breakout-Game.csprojResolveAssemblyReference.cache
+C:\Users\BT21112\Desktop\JamesBreakout\Breakout - Game\bin\Debug\Breakout - Game.exe.config
+C:\Users\BT21112\Desktop\JamesBreakout\Breakout - Game\obj\Debug\Breakout - Game.exe
+C:\Users\BT21112\Desktop\JamesBreakout\Breakout - Game\obj\Debug\Breakout - Game.pdb
