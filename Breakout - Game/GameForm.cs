@@ -93,7 +93,7 @@ namespace Breakout_Game
                     pause = true;
                     panelEndGame.Visible = true;
                     System.Windows.Forms.Cursor.Show();
-
+                    labelUpdateGamesWon.Text = (int.Parse(labelUpdateGamesWon.Text) + 1).ToString();
                 }
 
                 if (ball.deathCounter == TOTAL_LIVES)
@@ -289,6 +289,11 @@ namespace Breakout_Game
             bricks = new List<Brick>();
 
             setUpBricks(1, 81, 1000, 100, 97, 25, 4);
+
+            labelUpdateGamesPlayed.Text = (int.Parse(labelUpdateGamesPlayed.Text) + 1).ToString();
+
+            ball.deathCounter = 0;
+            hitCount = 0;
         }
 
         private void buttonNewGame_Click(object sender, EventArgs e)

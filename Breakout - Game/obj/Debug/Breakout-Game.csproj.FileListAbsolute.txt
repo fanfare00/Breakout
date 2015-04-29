@@ -21,3 +21,25 @@ C:\Users\james\Desktop\Breakout-master\Breakout - Game\obj\Debug\Breakout-Game.c
 C:\Users\james\Desktop\Breakout-master\Breakout - Game\obj\Debug\Breakout_Game.GameForm.resources
 C:\Users\james\Desktop\Breakout-master\Breakout - Game\obj\Debug\Breakout_Game.SplashForm.resources
 C:\Users\james\Desktop\Breakout-master\Breakout - Game\obj\Debug\Breakout_Game.MenuForm.resources
+C:\Users\BT21112\Desktop\Breakout-master\Breakout - Game\bin\Debug\Breakout - Game.exe.config
+C:\Users\BT21112\Desktop\Breakout-master\Breakout - Game\obj\Debug\Breakout - Game.exe
+C:\Users\BT21112\Desktop\Breakout-master\Breakout - Game\obj\Debug\Breakout - Game.pdb
+C:\Users\BT21112\Desktop\Breakout-master\Breakout - Game\bin\Debug\Breakout - Game.exe
+C:\Users\BT21112\Desktop\Breakout-master\Breakout - Game\bin\Debug\Breakout - Game.pdb
+C:\Users\BT21112\Desktop\Breakout-master\Breakout - Game\obj\Debug\Breakout-Game.csprojResolveAssemblyReference.cache
+C:\Users\BT21112\Desktop\Breakout-master\Breakout - Game\obj\Debug\Breakout_Game.GameForm.resources
+C:\Users\BT21112\Desktop\Breakout-master\Breakout - Game\obj\Debug\Breakout_Game.MenuForm.resources
+C:\Users\BT21112\Desktop\Breakout-master\Breakout - Game\obj\Debug\Breakout_Game.Properties.Resources.resources
+C:\Users\BT21112\Desktop\Breakout-master\Breakout - Game\obj\Debug\Breakout_Game.SplashForm.resources
+C:\Users\BT21112\Desktop\Breakout-master\Breakout - Game\obj\Debug\Breakout-Game.csproj.GenerateResource.Cache
+C:\Users\BT21112\Desktop\James_McCarthy_P#4\Breakout-master\Breakout - Game\bin\Debug\Breakout - Game.exe.config
+C:\Users\BT21112\Desktop\James_McCarthy_P#4\Breakout-master\Breakout - Game\obj\Debug\Breakout - Game.exe
+C:\Users\BT21112\Desktop\James_McCarthy_P#4\Breakout-master\Breakout - Game\obj\Debug\Breakout - Game.pdb
+C:\Users\BT21112\Desktop\James_McCarthy_P#4\Breakout-master\Breakout - Game\bin\Debug\Breakout - Game.exe
+C:\Users\BT21112\Desktop\James_McCarthy_P#4\Breakout-master\Breakout - Game\bin\Debug\Breakout - Game.pdb
+C:\Users\BT21112\Desktop\James_McCarthy_P#4\Breakout-master\Breakout - Game\obj\Debug\Breakout-Game.csprojResolveAssemblyReference.cache
+C:\Users\BT21112\Desktop\James_McCarthy_P#4\Breakout-master\Breakout - Game\obj\Debug\Breakout_Game.GameForm.resources
+C:\Users\BT21112\Desktop\James_McCarthy_P#4\Breakout-master\Breakout - Game\obj\Debug\Breakout_Game.MenuForm.resources
+C:\Users\BT21112\Desktop\James_McCarthy_P#4\Breakout-master\Breakout - Game\obj\Debug\Breakout_Game.Properties.Resources.resources
+C:\Users\BT21112\Desktop\James_McCarthy_P#4\Breakout-master\Breakout - Game\obj\Debug\Breakout_Game.SplashForm.resources
+C:\Users\BT21112\Desktop\James_McCarthy_P#4\Breakout-master\Breakout - Game\obj\Debug\Breakout-Game.csproj.GenerateResource.Cache

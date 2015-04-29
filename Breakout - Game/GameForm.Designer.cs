@@ -54,6 +54,8 @@
             this.labelStaticLevel = new System.Windows.Forms.Label();
             this.labelUserName = new System.Windows.Forms.Label();
             this.buttonBegin = new System.Windows.Forms.Button();
+            this.labelUpdateGamesPlayed = new System.Windows.Forms.Label();
+            this.labelUpdateGamesWon = new System.Windows.Forms.Label();
             this.panelEndGame.SuspendLayout();
             this.panelPause.SuspendLayout();
             this.panelBottomBar.SuspendLayout();
@@ -296,6 +298,8 @@
             // 
             this.panelTopBar.BackgroundImage = global::Breakout_Game.Properties.Resources.top_bar_bkg1;
             this.panelTopBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelTopBar.Controls.Add(this.labelUpdateGamesWon);
+            this.panelTopBar.Controls.Add(this.labelUpdateGamesPlayed);
             this.panelTopBar.Controls.Add(this.labelUpateLevel);
             this.panelTopBar.Controls.Add(this.labelUpdateScore);
             this.panelTopBar.Controls.Add(this.labelUpdateLives);
@@ -323,14 +327,14 @@
             // 
             // labelUpdateScore
             // 
-            this.labelUpdateScore.AutoSize = true;
             this.labelUpdateScore.Font = new System.Drawing.Font("Lucida Console", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUpdateScore.ForeColor = System.Drawing.Color.White;
-            this.labelUpdateScore.Location = new System.Drawing.Point(947, 27);
+            this.labelUpdateScore.Location = new System.Drawing.Point(927, 29);
             this.labelUpdateScore.Name = "labelUpdateScore";
-            this.labelUpdateScore.Size = new System.Drawing.Size(40, 37);
+            this.labelUpdateScore.Size = new System.Drawing.Size(69, 37);
             this.labelUpdateScore.TabIndex = 9;
             this.labelUpdateScore.Text = "0";
+            this.labelUpdateScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelUpdateLives
             // 
@@ -350,9 +354,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(857, 6);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 16);
+            this.label4.Size = new System.Drawing.Size(98, 16);
             this.label4.TabIndex = 7;
-            this.label4.Text = "GAMES WON 00";
+            this.label4.Text = "GAMES WON";
             // 
             // labelGamesPlayed
             // 
@@ -361,9 +365,9 @@
             this.labelGamesPlayed.ForeColor = System.Drawing.Color.White;
             this.labelGamesPlayed.Location = new System.Drawing.Point(403, 6);
             this.labelGamesPlayed.Name = "labelGamesPlayed";
-            this.labelGamesPlayed.Size = new System.Drawing.Size(158, 16);
+            this.labelGamesPlayed.Size = new System.Drawing.Size(128, 16);
             this.labelGamesPlayed.TabIndex = 6;
-            this.labelGamesPlayed.Text = "GAMES PLAYED 00";
+            this.labelGamesPlayed.Text = "GAMES PLAYED";
             // 
             // label3
             // 
@@ -430,6 +434,28 @@
             this.buttonBegin.MouseEnter += new System.EventHandler(this.pauseMenuButton_Enter);
             this.buttonBegin.MouseLeave += new System.EventHandler(this.pauseMenuButton_Leave);
             // 
+            // labelUpdateGamesPlayed
+            // 
+            this.labelUpdateGamesPlayed.AutoSize = true;
+            this.labelUpdateGamesPlayed.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUpdateGamesPlayed.ForeColor = System.Drawing.Color.White;
+            this.labelUpdateGamesPlayed.Location = new System.Drawing.Point(533, 6);
+            this.labelUpdateGamesPlayed.Name = "labelUpdateGamesPlayed";
+            this.labelUpdateGamesPlayed.Size = new System.Drawing.Size(18, 16);
+            this.labelUpdateGamesPlayed.TabIndex = 11;
+            this.labelUpdateGamesPlayed.Text = "1";
+            // 
+            // labelUpdateGamesWon
+            // 
+            this.labelUpdateGamesWon.AutoSize = true;
+            this.labelUpdateGamesWon.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUpdateGamesWon.ForeColor = System.Drawing.Color.White;
+            this.labelUpdateGamesWon.Location = new System.Drawing.Point(957, 7);
+            this.labelUpdateGamesWon.Name = "labelUpdateGamesWon";
+            this.labelUpdateGamesWon.Size = new System.Drawing.Size(18, 16);
+            this.labelUpdateGamesWon.TabIndex = 12;
+            this.labelUpdateGamesWon.Text = "0";
+            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,6 +508,8 @@
         private System.Windows.Forms.Button buttonEndMainMenu;
         private System.Windows.Forms.Label labelLoser;
         private System.Windows.Forms.Button buttonBegin;
+        private System.Windows.Forms.Label labelUpdateGamesPlayed;
+        private System.Windows.Forms.Label labelUpdateGamesWon;
     }
 }
 
