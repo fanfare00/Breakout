@@ -11,48 +11,44 @@ namespace Breakout_Game
 {
     class Paddle
     {
-        int width;
-        int height;
-        int posX;
-        int posY;
-        int speedX;
+        public int Speed;
 
-        Form _drawForm;
-        Graphics graphics;
+        public Rectangle PaddleRectangle;
+        
 
-        public Paddle(Form drawForm)
+        public Paddle(int posX, int posY, int width, int height, int speed)
         {
-            _drawForm = drawForm;
-            graphics = drawForm.CreateGraphics();
+            Speed = speed;
 
-            width = 150;
-            height = 20;
-            posX = 500;
-            posY = 700;
-            speedX = 10;
+            PaddleRectangle = new Rectangle(posX, posY, width, height);
         }
 
-        public void draw()
+        public void draw(PaintEventArgs e)
         {
-            graphics.FillRectangle(Brushes.Blue, posX, posY, width, height);
+            e.Graphics.FillRectangle(Brushes.White, PaddleRectangle);
         }
 
-        public void moveLeft()
+        public void moveLeft(Size gameSize)
         {
-            posX -= speedX;
-        }
-
-        public void moveRight()
-        {
-            posX += speedX;
-        }
-
-        public void checkOutOfBounds()
-        {
-            if (posX + width > _drawForm.Width)
+            if ((PaddleRectangle.X - Speed) > 0)
             {
-                //speedX = 0;
+                PaddleRectangle.X -= Speed;
             }
+                
+        }
+
+        public void moveRight(Size gameSize)
+        {
+            if ((PaddleRectangle.X + PaddleRectangle.Width + Speed) < gameSize.Width)
+            {
+                PaddleRectangle.X += Speed;
+            }
+        }
+
+        public Point Center()
+        {
+            return new Point(PaddleRectangle.Left + PaddleRectangle.Width / 2,
+                             PaddleRectangle.Top + PaddleRectangle.Height / 2);
         }
 
 

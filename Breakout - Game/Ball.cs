@@ -12,49 +12,75 @@ namespace Breakout_Game
     public class Ball
     {
         public int radius;
-        public int posX; 
-        public int posY; 
-        public int speedX;
-        public int speedY;
+        public double posX; 
+        public double posY; 
+        public double speedX;
+        public double speedY;
 
-        Form _drawForm;
-        Graphics graphics;
+        public int deathCounter;
 
-        public Ball(Form drawForm)
+        public Rectangle BoundingRectangle;
+
+        
+        //Graphics graphics;
+
+        public Ball()
         {
-            _drawForm = drawForm;
+            deathCounter = 0;
 
             this.radius = 20;
-            this.posX = 500;
-            this.posY = 500;
-            this.speedX = 10;
-            this.speedY = 10;
+            this.posX = 200;
+            this.posY = 200;
+            this.speedX = 7;
+            this.speedY = 7;
 
-            graphics = drawForm.CreateGraphics();
+            BoundingRectangle = new Rectangle(Center().X, Center().Y-10, 1, 30);
         }
 
-        public void draw()
+        public void draw(PaintEventArgs e)
         {
-            graphics.FillEllipse(Brushes.Red, posX, posY, radius, radius);
+            e.Graphics.FillEllipse(Brushes.Red, (int)posX, (int)posY, radius, radius);
+            
         }
 
-        public void update()
+        public void update(Size gameSize)
         {
-            checkOutOfBounds();
+            checkOutOfBounds(gameSize);
 
             posX += speedX;
             posY += speedY;
+
+            BoundingRectangle.X = Center().X;
+            BoundingRectangle.Y = Center().Y-15;
+
+
+            
         }
 
-        public void checkOutOfBounds()
+        public Point Center()
         {
-            if ((posX + speedX < 0) || (posX + speedX + radius > _drawForm.Size.Width))
+            return new Point((int)(posX + radius / 2),
+                             (int)(posY + radius / 2));
+        }
+
+        public void checkOutOfBounds(Size gameSize)
+        {
+            if ((posX + speedX < 0) || (posX + speedX + radius > gameSize.Width))
             {
                 speedX = speedX * -1;
             }
-            else if ((posY + speedY < 0) || (posY + speedY + radius > _drawForm.Size.Height))
+            else if ((posY + speedY < 70))
             {
                 speedY = speedY * -1;
+            }
+            else if (posY + speedY + radius > gameSize.Height)
+            {
+                deathCounter += 1;
+
+                this.posX = 200;
+                this.posY = 200;
+                this.speedX = 7;
+                this.speedY = 7;
             }
         }
 
